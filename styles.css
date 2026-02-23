@@ -520,6 +520,25 @@ main {
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
+.hidden {
+    display: none;
+}
+
+#success-msg {
+    max-width: 500px;
+    margin: 1rem auto 0;
+    padding: 16px 20px;
+    border: 1px solid var(--color-olive);
+    border-radius: 6px;
+    background-color: #f8faf5;
+    color: var(--color-warm-brown);
+    text-align: center;
+}
+
+.contact-form .input-error {
+    border: 2px solid red;
+}
+
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;

@@ -1,0 +1,11 @@
+For this exercise, I built client-side validation for the my Casa Ciabatta site's contact form, including required field checks, email format validation, inline error messages, real-time error clearing, and a success state after submission.
+
+Using the micro-iteration workflow felt structured and intentional. Working in small steps made it easier to understand each change and test functionality before moving forward. While it initially felt slower than writing everything at once, it reduced confusion and prevented larger bugs from building up. Each step had a clear purpose, which helped maintain focus and control over the code.
+
+The self-review process was especially useful. In one instance, the AI identified that my validate() function did not return a value, which would have caused issues when implementing the success state. In another review, it pointed out that I was repeatedly querying DOM elements inside the validation function. I refactored the code to store those elements once at the top level, improving efficiency and readability. A final review highlighted issues with using inline style.display for visibility, which I replaced with a reusable CSS class to better separate structure and presentation.
+
+I also noticed that the AI consistently caught structural and maintainability issues, such as repeated logic and poor separation of concerns. However, it did not always account for design consistency, so I manually adjusted the success message styling to better match the existing site.
+
+Compared to CLI tools like Claude Code, the browser-based experience felt more guided and conversational, but less integrated into the development environment. The CLI provides more control and flexibility, while the browser tool is easier for structured, step-by-step workflows like this.
+
+I would use micro-iteration and self-review for features involving user interaction or logic, where testing and understanding each step is important. For simpler or repetitive tasks, a larger prompt might be more efficient.
